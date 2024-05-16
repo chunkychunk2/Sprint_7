@@ -16,8 +16,8 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 public class LoginCourierValidationTest extends Steps {
 
     @Test
-    @DisplayName("Авторизация курьера без параметра login")
-    @Description("В ответе возвращается только параметр message")
+    @DisplayName("Проверка схемы POJO по документации")
+    @Description("При авторизация курьера без параметра login В ответе возвращается только параметр message")
     public void checkDto() {
         String login = RandomStringUtils.randomAlphabetic(5);
         String password = RandomStringUtils.randomAlphabetic(5);

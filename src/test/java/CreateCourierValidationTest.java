@@ -61,8 +61,8 @@ public class CreateCourierValidationTest extends Steps {
     }
 
     @Test
-    @DisplayName("Создание курьера без login")
-    @Description("В ответе возвращается только параметр message")
+    @DisplayName("Проверка схемы POJO по документации")
+    @Description("При создании курьера без параметра login В ответе возвращается только параметр message")
     public void checkDto() {
         String password = RandomStringUtils.randomAlphabetic(5);
         String firstName = RandomStringUtils.randomAlphabetic(5);
